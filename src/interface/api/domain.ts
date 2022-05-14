@@ -179,4 +179,13 @@ export interface Domain {
             };
         }>;
     }>;
+    '/domain/{domain}/extend': URL<{
+        post: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: 'Domain has been extended.';
+            };
+        }>;
+    }>;
 }
