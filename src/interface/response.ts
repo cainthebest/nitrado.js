@@ -4,6 +4,8 @@ export interface Response {
     headers?: Record<string, unknown>;
 }
 
+//! Bug with error response types
+/* 
 type ClientErrorStatus =
     | '400' // Bad Request
     | '401' // Unauthorized
@@ -36,3 +38,4 @@ export interface ServerRequestError extends Response {
         data?: unknown;
     };
 }
+*/
