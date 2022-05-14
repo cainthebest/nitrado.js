@@ -113,4 +113,13 @@ export interface Domain {
             };
         }>;
     }>;
+    '/domain/contact/{handle}': URL<{
+        delete: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: string;
+            };
+        }>;
+    }>;
 }
