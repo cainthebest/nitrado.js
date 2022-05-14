@@ -1,7 +1,7 @@
 name: Continuous Compilation, Integration & Deployment
 on:
     push:
-        branches: [production]
+        branches: [master]
 
 jobs:
     build_and_push:
