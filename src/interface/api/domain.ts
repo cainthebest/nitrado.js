@@ -188,4 +188,20 @@ export interface Domain {
             };
         }>;
     }>;
+    '/domain/pricing/{domain}/extend': URL<{
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    extension: {
+                        tld: string;
+                        currency: string;
+                        duration: number;
+                        price: number;
+                    };
+                };
+            };
+        }>;
+    }>;
 }
