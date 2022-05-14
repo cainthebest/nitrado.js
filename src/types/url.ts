@@ -1,7 +1,5 @@
 import {
     Response,
-    ClientRequestError,
-    ServerRequestError,
 } from '../interface/response';
 
 import type { AxiosResponse } from 'axios';
@@ -16,16 +14,8 @@ export type RequestResponse<
     ResponseData extends Response,
     RequestData extends Record<string, any> | false = false,
 > = RequestData extends false
-    ? (
-          data?: any,
-      ) => Promise<
-          AxiosResponse<ResponseData | ClientRequestError | ServerRequestError>
-      >
-    : (
-          data: RequestData,
-      ) => Promise<
-          AxiosResponse<ResponseData | ClientRequestError | ServerRequestError>
-      >;
+    ? (data?: any) => Promise<AxiosResponse<ResponseData>>
+    : (data: RequestData) => Promise<AxiosResponse<ResponseData>>;
 
 // This constructs a object that has Method properties that are functions that return a RequestResponse
 export type URL<
