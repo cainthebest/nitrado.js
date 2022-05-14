@@ -24,7 +24,8 @@
     "files": [
         "dist",
         "LICENSE",
-        "CHANGELOG.md"
+        "CHANGELOG.md",
+        "README.md"
     ],
     "scripts": {
         "build": "npm run format && npm run lint && npm run build:clean",
