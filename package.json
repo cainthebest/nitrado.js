@@ -1,6 +1,6 @@
 {
     "name": "nitrado.js",
-    "version": "0.1.0-ALPHA.1",
+    "version": "0.1.0-ALPHA.2",
     "license": "GPL-3.0",
     "main": "dist/index.js",
     "author": "cainthebest <https://github.com/cainthebest> & Contributors",
