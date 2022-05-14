@@ -1,6 +1,4 @@
-import {
-    Response,
-} from '../interface/response';
+import { Response } from '../interface/response';
 
 import type { AxiosResponse } from 'axios';
 
