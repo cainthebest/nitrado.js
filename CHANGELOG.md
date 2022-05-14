@@ -1,3 +1,11 @@
+### **0.1.5-ALPHA** (2022-05-14)  
+  
+- publish(npm): update  
+- chore(build)  
+- quickfix(response): comment out unused type  
+- chore(build)  
+- quickfix(bug): error response type    
+  
 ### **0.1.4-ALPHA** (2022-05-14)
 
 -   publish(npm): update latest
