@@ -8,4 +8,5 @@ import { Cloud_Server } from './api/cloud_server';
 import { Cloud_Server_Apps } from './api/cloud_server_apps';
 import { Company } from './api/company';
 import { Domain } from './api/domain';
-export declare type URLs = Global & OAuth2 & Registration & User & Service & Bouncer & Cloud_Server & Cloud_Server_Apps & Company & Domain;
+import { Game_Server } from './api/game_server';
+export declare type URLs = Global & OAuth2 & Registration & User & Service & Bouncer & Cloud_Server & Cloud_Server_Apps & Company & Domain & Game_Server;

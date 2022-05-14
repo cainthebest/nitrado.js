@@ -4,6 +4,8 @@ export interface Response {
     headers?: Record<string, unknown>;
 }
 
+//! Bug with error response types
+/* 
 type ClientErrorStatus =
     | '400' // Bad Request
     | '401' // Unauthorized
@@ -21,13 +23,11 @@ export interface ClientRequestError extends Response {
         data?: unknown;
     };
 }
-
 type ServerErrorStatus =
     | '500' // Internal Server Error
     | '502' // Bad Gateway
     | '503' // Service Unavailable
     | '504'; // Gateway Timeout
-
 export interface ServerRequestError extends Response {
     status: ServerErrorStatus;
     body: {
@@ -36,3 +36,4 @@ export interface ServerRequestError extends Response {
         data?: unknown;
     };
 }
+*/
