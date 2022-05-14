@@ -1,3 +1,8 @@
+### **0.1.2-ALPHA** (2022-05-14)  
+  
+- chore(build)  
+- fix(node latest): says will work in docs, ofc not    
+  
 ### **0.1.1-ALPHA** (2022-05-14)
 
 -   fix(semver): change semver format due to bug
