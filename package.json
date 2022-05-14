@@ -1,6 +1,6 @@
 {
     "name": "nitrado.js",
-    "version": "0.1.1-ALPHA",
+    "version": "0.1.2-ALPHA",
     "license": "GPL-3.0",
     "main": "dist/index.js",
     "author": "cainthebest <https://github.com/cainthebest> & Contributors",
@@ -23,7 +23,8 @@
     ],
     "files": [
         "dist",
-        "LICENSE"
+        "LICENSE",
+        "CHANGELOG.md"
     ],
     "scripts": {
         "build": "npm run format && npm run lint && npm run build:clean",
