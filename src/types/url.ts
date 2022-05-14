@@ -4,7 +4,7 @@ import {
     ServerRequestError,
 } from '../interface/response';
 
-import type { AxiosResponse, AxiosError } from 'axios';
+import type { AxiosResponse } from 'axios';
 
 // All the possible HTTP Methods
 type Method = 'get' | 'post' | 'put' | 'delete' | 'options';
