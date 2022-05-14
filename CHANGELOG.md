@@ -1,3 +1,21 @@
+### **0.1.4-ALPHA** (2022-05-14)  
+  
+- publish(npm): update latest  
+- doc(readme): update  
+- chore(build)  
+- impl(endpoint): Domain - Get all DNS records  
+- impl(endpoint): Domain - Get Domain Auth Code  
+- impl(endpoint): Domain - Extension Price  
+- impl(endpoint): Domain - Extend Domain  
+- impl(endpoint): Domain - Domain info  
+- imp(endpoint): Domain - Delete a redirect  
+- impl(endpoint): Domain - Delete a record  
+- fix(delete handle): change mesg type  
+- impl(endpoint): Domain - Delete Handle  
+- inc(readme): add readme to dist  
+- chore(build)  
+- fix(unused): AxiosError is defined but never used    
+  
 ### **0.1.3-ALPHA** (2022-05-14)
 
 -   chore(build)
