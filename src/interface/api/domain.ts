@@ -150,4 +150,33 @@ export interface Domain {
             { id: string }
         >;
     }>;
+    '/domain/{domain}/info': URL<{
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    info: {
+                        domain: string;
+                        created_at: string;
+                        modified_at: string;
+                        expires_at: string;
+                        status: string;
+                        transfer_lock: boolean;
+                        auth_code: unknown;
+                        auto_renew: string;
+                        delegation: boolean;
+                        owner_c: string;
+                        admin_c: string;
+                        tech_c: string;
+                        bill_c: string;
+                        ns1: string;
+                        ns2: string | null;
+                        ns3: string | null;
+                        ns4: string | null;
+                    };
+                };
+            };
+        }>;
+    }>;
 }
