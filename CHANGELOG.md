@@ -1,3 +1,10 @@
+### **0.1.3-ALPHA** (2022-05-14)  
+  
+- chore(build)  
+- publish(latest): update npm  
+- fix(.then): type could be error and on response  
+- doc(examples): add some quick examples    
+  
 ### **0.1.2-ALPHA** (2022-05-14)
 
 -   chore(build)
