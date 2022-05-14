@@ -102,5 +102,119 @@ export interface Domain {
                 message: string;
             };
         }>;
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    auth_code: {
+                        code: unknown;
+                        status: string;
+                    };
+                };
+            };
+        }>;
+    }>;
+    '/domain/contact/{handle}': URL<{
+        delete: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: 'The contact handle has been deleted successful.';
+            };
+        }>;
+    }>;
+    '/domain/{domain}/records': URL<{
+        delete: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: 'Deleted successfully';
+            };
+        }, {
+            name: string;
+            type: string;
+            content?: string;
+        }>;
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    status: 'success';
+                    message: Array<{
+                        type: string;
+                        content: string;
+                        name: string;
+                        mode: string;
+                    }>;
+                };
+            };
+        }>;
+    }>;
+    '/domain/{domain}/redirects': URL<{
+        delete: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: 'Deleted successfully';
+            };
+        }, {
+            id: string;
+        }>;
+    }>;
+    '/domain/{domain}/info': URL<{
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    info: {
+                        domain: string;
+                        created_at: string;
+                        modified_at: string;
+                        expires_at: string;
+                        status: string;
+                        transfer_lock: boolean;
+                        auth_code: unknown;
+                        auto_renew: string;
+                        delegation: boolean;
+                        owner_c: string;
+                        admin_c: string;
+                        tech_c: string;
+                        bill_c: string;
+                        ns1: string;
+                        ns2: string | null;
+                        ns3: string | null;
+                        ns4: string | null;
+                    };
+                };
+            };
+        }>;
+    }>;
+    '/domain/{domain}/extend': URL<{
+        post: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: 'Domain has been extended.';
+            };
+        }>;
+    }>;
+    '/domain/pricing/{domain}/extend': URL<{
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    extension: {
+                        tld: string;
+                        currency: string;
+                        duration: number;
+                        price: number;
+                    };
+                };
+            };
+        }>;
     }>;
 }
