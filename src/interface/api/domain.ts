@@ -118,7 +118,7 @@ export interface Domain {
             status: '200';
             body: {
                 status: 'success';
-                message: string;
+                message: "The contact handle has been deleted successful.";
             };
         }>;
     }>;
