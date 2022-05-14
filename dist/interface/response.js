@@ -19,13 +19,11 @@ export interface ClientRequestError extends Response {
         data?: unknown;
     };
 }
-
 type ServerErrorStatus =
     | '500' // Internal Server Error
     | '502' // Bad Gateway
     | '503' // Service Unavailable
     | '504'; // Gateway Timeout
-
 export interface ServerRequestError extends Response {
     status: ServerErrorStatus;
     body: {
