@@ -138,4 +138,16 @@ export interface Domain {
             }
         >;
     }>;
+    '/domain/{domain}/redirects': URL<{
+        delete: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    message: 'Deleted successfully';
+                };
+            },
+            { id: string }
+        >;
+    }>;
 }
