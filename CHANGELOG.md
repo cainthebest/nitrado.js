@@ -1,9 +1,9 @@
-### **0.1.6** (2022-05-14)  
-  
-- fix(semver): change format  
-- chore(build)  
-- fix(conflict): pr conflict    
-  
+### **0.1.6** (2022-05-14)
+
+-   fix(semver): change format
+-   chore(build)
+-   fix(conflict): pr conflict
+
 ### **0.1.5-ALPHA** (2022-05-14)
 
 -   publish(npm): update
