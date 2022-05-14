@@ -1,0 +1,18 @@
+name: Continuous Compilation for development branchs
+on:
+    push:
+        branches: [master]
+
+jobs:
+    build_and_push:
+        name: Lint, format & build
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2.3.4
+            - uses: actions/setup-node@v2.1.3
+            - uses: bahmutov/npm-install@v1
+            - run: npm run build
+
+            - uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                  commit_message: chore(build)

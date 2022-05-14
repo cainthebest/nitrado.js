@@ -1,0 +1,48 @@
+{
+    "name": "nitrado.js",
+    "version": "0.1.0-ALPHA.1",
+    "license": "GPL-3.0",
+    "main": "dist/index.js",
+    "author": "cainthebest <https://github.com/cainthebest> & Contributors",
+    "description": "A type safe wrapper for the Nitrado API",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cainthebest/nitrado.js"
+    },
+    "bugs": {
+        "url": "https://github.com/cainthebest/nitrado.js/issues"
+    },
+    "keywords": [
+        "nitrapi",
+        "Nitrado",
+        "Nitrado API",
+        "axios",
+        "nodejs",
+        "javascript",
+        "typescript"
+    ],
+    "files": [
+        "dist",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "npm run format && npm run lint && npm run build:clean",
+        "build:clean": "rimraf dist && tsc",
+        "lint:check": "eslint . --ext .ts",
+        "lint": "npm run lint:check -- --fix",
+        "format": "prettier --write **/**.{ts,json,md,yaml,yml}"
+    },
+    "dependencies": {
+        "axios": "^0.27.2"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.31",
+        "@typescript-eslint/eslint-plugin": "^5.22.0",
+        "@typescript-eslint/parser": "^5.22.0",
+        "eslint": "^8.14.0",
+        "eslint-config-prettier": "^8.5.0",
+        "prettier": "^2.6.2",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.6.4"
+    }
+}
