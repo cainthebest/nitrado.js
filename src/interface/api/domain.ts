@@ -118,8 +118,24 @@ export interface Domain {
             status: '200';
             body: {
                 status: 'success';
-                message: "The contact handle has been deleted successful.";
+                message: 'The contact handle has been deleted successful.';
             };
         }>;
+    }>;
+    '/domain/{domain}/records': URL<{
+        delete: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    message: 'Deleted successfully';
+                };
+            },
+            {
+                name: string;
+                type: string;
+                content?: string;
+            }
+        >;
     }>;
 }
