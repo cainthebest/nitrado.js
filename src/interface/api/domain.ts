@@ -149,6 +149,21 @@ export interface Domain {
                 content?: string;
             }
         >;
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    status: 'success';
+                    message: Array<{
+                        type: string;
+                        content: string;
+                        name: string;
+                        mode: string;
+                    }>;
+                };
+            };
+        }>;
     }>;
     '/domain/{domain}/redirects': URL<{
         delete: RequestResponse<
