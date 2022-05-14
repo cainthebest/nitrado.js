@@ -18,24 +18,14 @@ export type RequestResponse<
 > = RequestData extends false
     ? (
           data?: any,
-      ) =>
-          | Promise<
-                AxiosResponse<
-                    ResponseData | ClientRequestError | ServerRequestError
-                >
-            >
-          | AxiosError
-          | Error
+      ) => Promise<
+          AxiosResponse<ResponseData | ClientRequestError | ServerRequestError>
+      >
     : (
           data: RequestData,
-      ) =>
-          | Promise<
-                AxiosResponse<
-                    ResponseData | ClientRequestError | ServerRequestError
-                >
-            >
-          | AxiosError
-          | Error;
+      ) => Promise<
+          AxiosResponse<ResponseData | ClientRequestError | ServerRequestError>
+      >;
 
 // This constructs a object that has Method properties that are functions that return a RequestResponse
 export type URL<
