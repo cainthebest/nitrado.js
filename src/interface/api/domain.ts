@@ -112,6 +112,18 @@ export interface Domain {
                 message: string;
             };
         }>;
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    auth_code: {
+                        code: unknown;
+                        status: string;
+                    };
+                };
+            };
+        }>;
     }>;
     '/domain/contact/{handle}': URL<{
         delete: RequestResponse<{
