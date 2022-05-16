@@ -167,4 +167,15 @@ export interface Game_Server {
             { password: string }
         >;
     }>;
+    '/services/{id}/gameservers/file_server/bookmarks': URL<{
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    bookmarks: Array<string>;
+                };
+            };
+        }>;
+    }>;
 }
