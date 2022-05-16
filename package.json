@@ -3,6 +3,13 @@
     "version": "0.1.7",
     "license": "GPL-3.0",
     "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.mjs"
+        }
+    },
     "author": "cainthebest <https://github.com/cainthebest> & Contributors",
     "description": "A type safe wrapper for the Nitrado API",
     "repository": {
@@ -29,7 +36,7 @@
     ],
     "scripts": {
         "build": "npm run format && npm run lint && npm run build:clean",
-        "build:clean": "rimraf dist && tsc",
+        "build:clean": "tsup-node",
         "lint:check": "eslint . --ext .ts",
         "lint": "npm run lint:check -- --fix",
         "format": "prettier --write **/**.{ts,json,md,yaml,yml}"
@@ -45,6 +52,7 @@
         "eslint-config-prettier": "^8.5.0",
         "prettier": "^2.6.2",
         "rimraf": "^3.0.2",
+        "tsup": "^5.12.8",
         "typescript": "^4.6.4"
     }
 }
