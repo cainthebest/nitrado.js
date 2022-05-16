@@ -119,4 +119,16 @@ export interface Game_Server {
             { command: string }
         >;
     }>;
+    '/services/{id}/gameservers/app_server': URL<{
+        get: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    message: 'Application server pinged';
+                };
+            },
+            { command: string }
+        >;
+    }>;
 }
