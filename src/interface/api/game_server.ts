@@ -178,4 +178,16 @@ export interface Game_Server {
             };
         }>;
     }>;
+    '/services/{id}/gameservers/file_server/copy': URL<{
+        post: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    message: 'File or directory has been copied';
+                };
+            },
+            { source_path: string; target_path: string; target_name: string }
+        >;
+    }>;
 }
