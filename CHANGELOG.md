@@ -1,3 +1,19 @@
+### **0.1.7** (2022-05-16)  
+  
+- publish(npm): update  
+- chore(build)  
+- impl(URLs): add Game_Lastoasis  
+- impl(endpoint): Game_Lastoasis - Lastoasis Useridentifier  
+- chore(build)  
+- impl(endpoint): Gameserver - App Server - Ping  
+- impl(endpoint): Gameserver - App Server - Command  
+- impl(endpoint): Gameserver - Backup - List Backups  
+- impl(endpoint): Gameserver - Stop  
+- fix(endpoint): Gameserver - Restart  
+- impl(endpoint): Gameserver - Restart  
+- doc(readme): add cjs example import  
+- chore(build)    
+  
 ### **0.1.6** (2022-05-14)
 
 -   fix(semver): change format
