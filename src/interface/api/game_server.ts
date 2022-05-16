@@ -107,4 +107,16 @@ export interface Game_Server {
             };
         }>;
     }>;
+    '/services/{id}/gameservers/app_server/command': URL<{
+        post: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    message: 'Command successful send to the application server';
+                };
+            },
+            { command: string }
+        >;
+    }>;
 }
