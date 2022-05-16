@@ -77,4 +77,34 @@ export interface Game_Server {
             { message?: string; stop_message?: string }
         >;
     }>;
+    '/services/{id}/gameservers/backups': URL<{
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    backups: {
+                        gameserver: Record<
+                            string,
+                            Array<{
+                                backup_type: string;
+                                backup_timestamp: number;
+                                backup_number: number;
+                                backup_size: number;
+                                backup_file_size: number;
+                            }>
+                        >;
+                        database: Record<
+                            string,
+                            Array<{
+                                backup_file: string;
+                                backup_size: number;
+                                backup_timestamp: number;
+                            }>
+                        >;
+                    };
+                };
+            };
+        }>;
+    }>;
 }
