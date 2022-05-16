@@ -65,4 +65,16 @@ export interface Game_Server {
             { message?: string; restart_message?: string }
         >;
     }>;
+    '/services/{id}/gameservers/stop': URL<{
+        post: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    message: 'Server will be stopped now.';
+                };
+            },
+            { message?: string; stop_message?: string }
+        >;
+    }>;
 }
