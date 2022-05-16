@@ -46,4 +46,74 @@ export interface Game_Server {
             };
         }>;
     }>;
+    '/services/{id}/gameservers/restart': URL<{
+        post: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: 'Server will be restarted now.';
+            };
+        }, {
+            message?: string;
+            restart_message?: string;
+        }>;
+    }>;
+    '/services/{id}/gameservers/stop': URL<{
+        post: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: 'Server will be stopped now.';
+            };
+        }, {
+            message?: string;
+            stop_message?: string;
+        }>;
+    }>;
+    '/services/{id}/gameservers/backups': URL<{
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    backups: {
+                        gameserver: Record<string, Array<{
+                            backup_type: string;
+                            backup_timestamp: number;
+                            backup_number: number;
+                            backup_size: number;
+                            backup_file_size: number;
+                        }>>;
+                        database: Record<string, Array<{
+                            backup_file: string;
+                            backup_size: number;
+                            backup_timestamp: number;
+                        }>>;
+                    };
+                };
+            };
+        }>;
+    }>;
+    '/services/{id}/gameservers/app_server/command': URL<{
+        post: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: 'Command successful send to the application server';
+            };
+        }, {
+            command: string;
+        }>;
+    }>;
+    '/services/{id}/gameservers/app_server': URL<{
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: 'Application server pinged';
+            };
+        }, {
+            command: string;
+        }>;
+    }>;
 }
