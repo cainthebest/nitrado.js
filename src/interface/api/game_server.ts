@@ -155,4 +155,16 @@ export interface Game_Server {
             { folder: string; backup: string }
         >;
     }>;
+    '/services/{id}/gameservers/ftp/password': URL<{
+        post: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    message: 'The ftp password has been changed';
+                };
+            },
+            { password: string }
+        >;
+    }>;
 }
