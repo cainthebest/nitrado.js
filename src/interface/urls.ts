@@ -9,6 +9,8 @@ import { Cloud_Server_Apps } from './api/cloud_server_apps';
 import { Company } from './api/company';
 import { Domain } from './api/domain';
 
+import { Game_Lastoasis } from './api/game_lastoasis';
+
 import { Game_Server } from './api/game_server';
 
 export type URLs = Global &
@@ -21,4 +23,5 @@ export type URLs = Global &
     Cloud_Server_Apps &
     Company &
     Domain &
+    Game_Lastoasis &
     Game_Server;
