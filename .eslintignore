@@ -1,2 +1,3 @@
 /dist
+/tsup.config.ts
 /node_modules
