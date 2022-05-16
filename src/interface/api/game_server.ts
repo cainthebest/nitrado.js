@@ -131,4 +131,16 @@ export interface Game_Server {
             { command: string }
         >;
     }>;
+    '/services/{id}/gameservers/backups/database': URL<{
+        post: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    data: 'Database backup will be restored.';
+                };
+            },
+            { database: string; timestamp: string }
+        >;
+    }>;
 }
