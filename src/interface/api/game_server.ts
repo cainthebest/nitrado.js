@@ -53,4 +53,13 @@ export interface Game_Server {
             };
         }>;
     }>;
+    '/services/{id}/gameservers/restart': URL<{
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: 'Server will be restarted now.';
+            };
+        }>;
+    }>;
 }
