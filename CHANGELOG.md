@@ -1,3 +1,17 @@
+### **0.1.8** (2022-05-16)  
+  
+- publish(npm): update  
+- chore(build)  
+- impl(tsup): add config  
+- chore(ignore): tsup config  
+- del(rimraf): dev dep  
+- impl(endpoint): Gameserver - Files - Copy  
+- impl(tsup): dist bundler  
+- impl(endpoint): Gameserver - Files - Bookmarks  
+- impl(endpoint): Gameserver - FTP - Change password  
+- impl(endpoint): Gameserver - Backup - Restore Game Server  
+- impl(endpoint): Gameserver - Backup - Restore Database    
+  
 ### **0.1.7** (2022-05-16)  
   
 - publish(npm): update  
