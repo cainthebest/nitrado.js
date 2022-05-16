@@ -57,8 +57,13 @@ It is not recommended to use this project for anything other than testing.
 ## Usage
 
 ```ts
-import 'dotenv/config';
+// CommonJS
+const { NitrApi } = require('nitrado.js');
+require('dotenv/config');
+
+// ESM
 import { NitrApi } from 'nitrado.js';
+import 'dotenv/config';
 
 // Its recomennded to use dotenv to store your API token
 // Optional / Not required for endpoints with no authentication
