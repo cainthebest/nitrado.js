@@ -202,4 +202,16 @@ export interface Game_Server {
             { path: string; name: string }
         >;
     }>;
+    '/services/{id}/gameservers/file_server/delete': URL<{
+        delete: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    message: 'File or directory has been deleted';
+                };
+            },
+            { path: string }
+        >;
+    }>;
 }
