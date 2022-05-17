@@ -21,6 +21,39 @@
   </p>
 </div>
 
+<details>
+  <summary> Table of Contents </summary>
+
+  <ol>
+    <li>
+      <a href="#setup">Setup</a>
+      <ol>
+        <li><a href="#nodejs">NodeJS</a></li>
+        <li><a href="#installing">Installing</a></li>
+      </ol>
+    </li>
+    <li>
+      <a href="#get-started">Get Started</a>
+      <ol>
+        <li><a href="#importing">Importing</li>
+        <li><a href="#authenticating">Authenticating</a></li>
+        <li><a href="#making-requests">Making Requests</a></li>
+        <li><a href="#param-paths">Param Paths</a></li>
+        <li><a href="#passing-data-into-a-request">Passing data into a request</a></li>
+      </ol>
+    </li>
+    <li>
+      <a href="#getting-an-api-token">Getting an API token</a>
+    </li>
+    <li>
+      <a href="#support">Support</a>
+    </li>
+    <li>
+      <a href="#license">License</a>
+    </li>
+  </ol>
+</details>
+
 # Setup
 
 ## NodeJS
@@ -103,7 +136,7 @@ We can pass that in along side the path function, as always it's fully typesafe 
 api.path('/services/{id}/bouncers', { id: 'REPLACE_ME' })
 ```
 
-## Passing in data to a request
+## Passing data into a request
 
 On some endpoints we might need to pass in data to the request, for example the bouncers endpoint we saw previously. When we call `delete` on it we can pass in some data.
 
