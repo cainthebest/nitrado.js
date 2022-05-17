@@ -188,6 +188,70 @@ interface Game_Server {
             target_name: string;
         }>;
     }>;
+    '/services/{id}/gameservers/file_server/mkdir': URL<{
+        post: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: 'The directory has created';
+            };
+        }, {
+            path: string;
+            name: string;
+        }>;
+    }>;
+    '/services/{id}/gameservers/file_server/delete': URL<{
+        delete: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                message: 'File or directory has been deleted';
+            };
+        }, {
+            path: string;
+        }>;
+    }>;
+    '/services/{id}/gameservers/file_server/download': URL<{
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    token: {
+                        url: string;
+                        token: string;
+                    };
+                };
+            };
+        }, {
+            file: string;
+        }>;
+    }>;
+    '/services/{id}/gameservers/file_server/list': URL<{
+        get: RequestResponse<{
+            status: '200';
+            body: {
+                status: 'success';
+                data: {
+                    entries: Array<{
+                        type: string;
+                        path: string;
+                        name: string;
+                        size: number;
+                        owner: string;
+                        group: string;
+                        chmod: string;
+                        created_at: number;
+                        modified_at: number;
+                        accessed_at?: number;
+                    }>;
+                };
+            };
+        }, {
+            dir?: string;
+            search?: string;
+        }>;
+    }>;
 }
 
 interface Domain {
