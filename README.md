@@ -147,8 +147,6 @@ api.path('/services/{id}/bouncers', { id: 'REPLACE_ME' })
 
 # Getting an API Token
 
-Unfortunately due to a bug in the non-US versions of the Nitrado websites you must use a VPN or proxy if you are outside of these locations.
-
 When you are logged into the nitrado website, you can visit the following URL to generate your API token. https://server.nitrado.net/eng/developer/tokens
 
 # Support
