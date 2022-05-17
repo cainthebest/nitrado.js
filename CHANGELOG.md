@@ -1,3 +1,53 @@
+### **0.1.9** (2022-05-17)  
+  
+- publish(npm): update  
+- chore(build)  
+- Merge pull request #21 from cainthebest/dependabot/npm_and_yarn/typescript-eslint/parser-5.24.0
+
+build(deps-dev): bump @typescript-eslint/parser from 5.23.0 to 5.24.0  
+- Merge pull request #22 from cainthebest/dependabot/npm_and_yarn/types/node-17.0.34
+
+build(deps-dev): bump @types/node from 17.0.33 to 17.0.34  
+- Merge pull request #23 from cainthebest/dependabot/npm_and_yarn/typescript-eslint/eslint-plugin-5.24.0
+
+build(deps-dev): bump @typescript-eslint/eslint-plugin from 5.23.0 to 5.24.0  
+- Merge pull request #24 from ghostdevv/master
+
+Update Docs  
+- docs: remove workaround for api token  
+- docs: update  
+- docs: update  
+- build(deps-dev): bump @types/node from 17.0.33 to 17.0.34
+
+Bumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 17.0.33 to 17.0.34.
+- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)
+- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)
+
+---
+updated-dependencies:
+- dependency-name: "@types/node"
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>  
+- chore(build)  
+- impl(endpoint): Gameserver - Game - List  
+- impl(endpoint): Gameserver - Game - Install  
+- chore(build)  
+- impl(endpoint): Gameserver - Full Game list  
+- impl(endpoints): Gameserver - Files - Upload  
+- impl(endpoint): Gameserver - Files - Stat  
+- impl(endpoint): Gameserver - Files - Size  
+- impl(endpoint): Gameserver - Files - Seek  
+- impl(endpoint): Gameserver - Files - Move / Rename  
+- chore(build)  
+- fix(endpoint): Gameserver - Files - List  
+- impl(endpoint): Gameserver - Files - List  
+- impl(endpoint): Gameserver - Files - Download  
+- impl(endpoint): Gameserver - Files - Delete  
+- impl(endpoint): Gameserver - Files - Create directory    
+  
 ### **0.1.8** (2022-05-16)  
   
 - publish(npm): update  
