@@ -294,4 +294,18 @@ export interface Game_Server {
             }
         >;
     }>;
+    '/services/{id}/gameservers/file_server/size': URL<{
+        get: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    data: {
+                        size: number;
+                    };
+                };
+            },
+            { path: string }
+        >;
+    }>;
 }
