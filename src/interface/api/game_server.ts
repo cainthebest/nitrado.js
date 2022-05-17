@@ -190,4 +190,16 @@ export interface Game_Server {
             { source_path: string; target_path: string; target_name: string }
         >;
     }>;
+    '/services/{id}/gameservers/file_server/mkdir': URL<{
+        post: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    message: 'The directory has created';
+                };
+            },
+            { path: string; name: string }
+        >;
+    }>;
 }
