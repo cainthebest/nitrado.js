@@ -70,7 +70,7 @@ npm install nitrado.js
 
 # Get Started
 
-## Importing 
+## Importing
 
 If you are using TypeScript or ESM (import):
 
@@ -90,14 +90,15 @@ We recommend storing your API token in a environment variable. The easiest way t
 
 You can [read the guide here](#getting-an-api-token) on how to get an API token.
 
-  - ### dotenv
+-   ### dotenv
+
     ```js
-    const api = NitrApi(process.env["NITRADO_TOKEN"]);
+    const api = NitrApi(process.env['NITRADO_TOKEN']);
     ```
 
-  - ### Passing it in
+-   ### Passing it in
     ```js
-    const api = NitrApi("REPLACE_ME");
+    const api = NitrApi('REPLACE_ME');
     ```
 
 ## Making requests
@@ -107,7 +108,7 @@ The api object has a `path` function, this is how you can set what path you are 
 For example lets use the `/ping` route.
 
 ```js
-const api = NitrApi(process.env["NITRADO_TOKEN"]);
+const api = NitrApi(process.env['NITRADO_TOKEN']);
 
 const ping = api.path('/ping');
 ```
@@ -115,13 +116,13 @@ const ping = api.path('/ping');
 When we have the path we can then make a HTTP request to it. For example:
 
 ```js
-const api = NitrApi(process.env["NITRADO_TOKEN"]);
+const api = NitrApi(process.env['NITRADO_TOKEN']);
 
 const response = api.path('/ping').get();
 
 response.then((data) => {
-  console.log(data)
-})
+    console.log(data);
+});
 ```
 
 Becuase `nitrado.js` is fully type safe, intelli-sense will tell you all the possible paths and HTTP methods you can do!
@@ -133,7 +134,7 @@ Some paths might have a parameter, for example the following route has the `id` 
 We can pass that in along side the path function, as always it's fully typesafe so intellisense will tell you what you need to pass in:
 
 ```js
-api.path('/services/{id}/bouncers', { id: 'REPLACE_ME' })
+api.path('/services/{id}/bouncers', { id: 'REPLACE_ME' });
 ```
 
 ## Passing data into a request
@@ -141,8 +142,9 @@ api.path('/services/{id}/bouncers', { id: 'REPLACE_ME' })
 On some endpoints we might need to pass in data to the request, for example the bouncers endpoint we saw previously. When we call `delete` on it we can pass in some data.
 
 ```js
-api.path('/services/{id}/bouncers', { id: 'REPLACE_ME' })
-    .delete({ ident: 'REPLACE_ME' })
+api.path('/services/{id}/bouncers', { id: 'REPLACE_ME' }).delete({
+    ident: 'REPLACE_ME',
+});
 ```
 
 # Getting an API Token
@@ -151,11 +153,12 @@ When you are logged into the nitrado website, you can visit the following URL to
 
 # Support
 
-- ### Github Issues
-  https://github.com/cainthebest/nitrado.js/issues/new
+-   ### Github Issues
 
-- ### Discord
-  https://discord.gg/M4ZBSMKqug
+    https://github.com/cainthebest/nitrado.js/issues/new
+
+-   ### Discord
+    https://discord.gg/M4ZBSMKqug
 
 # License
 
