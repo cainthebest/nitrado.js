@@ -272,4 +272,26 @@ export interface Game_Server {
             }
         >;
     }>;
+    '/services/{id}/gameservers/file_server/seek': URL<{
+        get: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    data: {
+                        token: {
+                            url: string;
+                            token: string;
+                        };
+                    };
+                };
+            },
+            {
+                file: string;
+                offset: number;
+                length: number;
+                mode?: 'raw' | 'lines';
+            }
+        >;
+    }>;
 }
