@@ -256,4 +256,20 @@ export interface Game_Server {
             { dir?: string; search?: string }
         >;
     }>;
+    '/services/{id}/gameservers/file_server/move': URL<{
+        post: RequestResponse<
+            {
+                status: '200';
+                body: {
+                    status: 'success';
+                    message: 'The directory has been moved';
+                };
+            },
+            {
+                source_path: string;
+                target_path: string;
+                target_filename?: string;
+            }
+        >;
+    }>;
 }
