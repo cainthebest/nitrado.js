@@ -248,7 +248,7 @@ export interface Game_Server {
                             chmod: string;
                             created_at: number;
                             modified_at: number;
-                            accessed_at: number;
+                            accessed_at?: number;
                         }>;
                     };
                 };
