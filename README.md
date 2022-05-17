@@ -1,4 +1,4 @@
-> **NOTE** This project is not at a stable release, it's still in development. Please report any issues you encounter [here](https://github.com/cainthebest/nitrado.js/issues/new).
+> **NOTE** This project is not at a stable release, it's still in development. Please report any issues you encounter [here](https://github.com/cainthebest/nitrado.js/issues/new?assignees=&labels=bug%2C+needs+triage&template=bug_report.md&title=).
 
 <div align="center">
   <a>
@@ -11,11 +11,11 @@
       Changelog
     </a>
     ·
-    <a href="https://github.com/cainthebest/nitrado.js/issues/news">
+    <a href="https://github.com/cainthebest/nitrado.js/issues/new?assignees=&labels=bug%2C+needs+triage&template=bug_report.md&title=">
       Report Bug
     </a>
     ·
-    <a href="https://github.com/cainthebest/nitrado.js/issues/new">
+    <a href="https://github.com/cainthebest/nitrado.js/issues/new?assignees=&labels=enhancement%2C+needs+triage&template=feature_request.md&title=">
       Request Feature
     </a>
   </p>
