@@ -1,4 +1,4 @@
-> **NOTE** This project is not at a stable release, it's still in development. Please report any issues you encounter [here](https://github.com/cainthebest/nitrado.js/issues/new?assignees=&labels=bug%2C+needs+triage&template=bug_report.md&title=).
+> **NOTE** This project is not at a stable release, it's still in development. Please report any issues you encounter [here](https://github.com/cainthebest/nitrado.js/issues/new/choose).
 
 <div align="center">
   <a>
@@ -11,11 +11,11 @@
       Changelog
     </a>
     ·
-    <a href="https://github.com/cainthebest/nitrado.js/issues/new?assignees=&labels=bug%2C+needs+triage&template=bug_report.md&title=">
+    <a href="https://github.com/cainthebest/nitrado.js/issues/new?assignees=&labels=bug%2Cneeds+triage&template=bug_report.yml">
       Report Bug
     </a>
     ·
-    <a href="https://github.com/cainthebest/nitrado.js/issues/new?assignees=&labels=enhancement%2C+needs+triage&template=feature_request.md&title=">
+    <a href="https://github.com/cainthebest/nitrado.js/issues/new?assignees=&labels=enhancement%2Cneeds+triage&template=feature_request.yml">
       Request Feature
     </a>
   </p>
@@ -155,7 +155,7 @@ When you are logged into the nitrado website, you can visit the following URL to
 
 -   ### Github Issues
 
-    https://github.com/cainthebest/nitrado.js/issues/new
+    https://github.com/cainthebest/nitrado.js/issues/new/choose
 
 -   ### Discord
     https://discord.gg/M4ZBSMKqug
