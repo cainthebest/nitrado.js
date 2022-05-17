@@ -1,3 +1,13 @@
+### **0.1.10** (2022-05-17)  
+  
+- publish(npm): update  
+- fix(readme): change url for issue forms  
+- chore(build)  
+- impl(github forms): replace templates with forms  
+- impl(templates): add github template url  
+- chore(build)  
+- Impl(github): issue templates    
+  
 ### **0.1.9** (2022-05-17)  
   
 - publish(npm): update  
