@@ -1,3 +1,9 @@
+### **0.1.11** (2022-05-18)  
+  
+- publish(npm): update  
+- Merge pull request #25 from cainthebest/dependabot/npm_and_yarn/typescript-eslint/parser-5.25.0  
+- Merge pull request #26 from cainthebest/dependabot/npm_and_yarn/typescript-eslint/eslint-plugin-5.25.0    
+  
 ### **0.1.10** (2022-05-17)  
   
 - publish(npm): update  
