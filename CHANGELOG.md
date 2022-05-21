@@ -1,3 +1,24 @@
+### **0.1.12** (2022-05-21)  
+  
+- publish(npm): update  
+- Merge pull request #28 from cainthebest/dependabot/npm_and_yarn/types/node-17.0.35
+
+build(deps-dev): bump @types/node from 17.0.34 to 17.0.35  
+- build(deps-dev): bump @types/node from 17.0.34 to 17.0.35
+
+Bumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 17.0.34 to 17.0.35.
+- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)
+- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)
+
+---
+updated-dependencies:
+- dependency-name: "@types/node"
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>    
+  
 ### **0.1.11** (2022-05-18)  
   
 - publish(npm): update  
