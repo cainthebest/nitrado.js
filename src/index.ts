@@ -61,7 +61,8 @@ export const NitrApi = (token?: string) => {
         // Replace all mustache tags with their respective values
         const urlString = url.replace(
             /\{([^}]+)\}/g,
-            (_: string, param: keyof Params) => params[param] || `{${param}}`,
+            (_: string, param: keyof Params) =>
+                params[param] || `{${String(param)}}`,
         );
 
         // These are what makes the actual HTTP requests using axios
