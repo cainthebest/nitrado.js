@@ -2185,7 +2185,7 @@ declare type ParamsRecord<URLString extends string, Params = Record<string, stri
  * @author Copyright (C) 2022 cainthebest & Contributors
  * @license GNU General Public License v3.0
  */
-declare const NitrApi: (token?: string | undefined) => {
+declare const NitrApi: (token?: string) => {
     path: <URLString extends keyof Global | keyof OAuth2 | keyof Registration | keyof User | keyof Service | "/services/{id}/bouncers" | keyof Cloud_Server | keyof Cloud_Server_Apps | "/company/stats" | keyof Domain | keyof Game_Server, Params extends ParamsRecord<URLString, Record<string, string>>>(url: URLString, params: Params) => URLs[URLString];
 };
 
