@@ -39,7 +39,7 @@ var NitrApi = /* @__PURE__ */ __name((token) => {
     }
   });
   const path = /* @__PURE__ */ __name((url, params) => {
-    const urlString = url.replace(/\{([^}]+)\}/g, (_, param) => params[param] || `{${param}}`);
+    const urlString = url.replace(/\{([^}]+)\}/g, (_, param) => params[param] || `{${String(param)}}`);
     const handlers = {
       get: (data) => request.get(urlString, { data }),
       post: (data) => request.post(urlString, { data }),
