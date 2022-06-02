@@ -1,11 +1,9 @@
 name: Continuous Compilation, Integration & Deployment
 on:
     push:
-        branches:
-            - master
+        branches: [master, restructure]
     pull_request:
-        branches:
-            - master
+        branches: [master]
 
 jobs:
     build_and_push:
