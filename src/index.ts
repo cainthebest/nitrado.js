@@ -16,16 +16,13 @@
 */
 import axios from 'axios';
 import { URLs } from './interface/urls';
+import { Config } from './types/config';
 import { ParamsRecord } from './types/path';
-import { readFileSync } from 'fs';
-
-const { version } = JSON.parse(readFileSync('package.json', 'utf-8')) as {
-    version: string;
-};
 
 /**
  * NitrApi request manager
  * @param token The token to use for bearer auth requests
+ * @param config The config for NitrApi
  * @returns The NitrApi instance
  *
  * @github https://github.com/cainthebest/nitrado.js
@@ -35,13 +32,13 @@ const { version } = JSON.parse(readFileSync('package.json', 'utf-8')) as {
  * @license GNU General Public License v3.0
  */
 
-export const NitrApi = (token?: string) => {
+export const NitrApi = (token?: string, config?: Config) => {
     const request = axios.create({
         baseURL: 'https://api.nitrado.net',
         headers: {
             ContentType: 'application/json',
-            Authorization: token ? 'Bearer ' + token : '',
-            'User-Agent': `nitrado.js/${version}`,
+            Authorization: token ? `Bearer ${token}` : '',
+            'User-Agent': config?.userAgent ? config.userAgent : 'nitrado.js',
         },
     });
 
