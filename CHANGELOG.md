@@ -1,3 +1,66 @@
+### **0.1.13** (2022-06-02)  
+  
+- publish(npm): fix and dep updates  
+- chore(build)  
+- fix(typescript): runtime implicit conversion  
+- Merge pull request #38 from cainthebest/dependabot/npm_and_yarn/types/node-17.0.38  
+- build(deps-dev): bump @types/node from 17.0.36 to 17.0.38
+
+Bumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 17.0.36 to 17.0.38.
+- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)
+- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)
+
+---
+updated-dependencies:
+- dependency-name: "@types/node"
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>  
+- Merge pull request #34 from cainthebest/dependabot/npm_and_yarn/types/node-17.0.36
+
+build(deps-dev): bump @types/node from 17.0.35 to 17.0.36  
+- build(deps-dev): bump @types/node from 17.0.35 to 17.0.36
+
+Bumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 17.0.35 to 17.0.36.
+- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)
+- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)
+
+---
+updated-dependencies:
+- dependency-name: "@types/node"
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>  
+- Merge pull request #35 from cainthebest/dependabot/npm_and_yarn/typescript-eslint/parser-5.27.0
+
+build(deps-dev): bump @typescript-eslint/parser from 5.26.0 to 5.27.0  
+- Merge pull request #36 from cainthebest/dependabot/npm_and_yarn/typescript-eslint/eslint-plugin-5.27.0
+
+build(deps-dev): bump @typescript-eslint/eslint-plugin from 5.26.0 to 5.27.0  
+- Merge pull request #29 from cainthebest/dependabot/npm_and_yarn/eslint-8.16.0  
+- Merge pull request #30 from cainthebest/dependabot/npm_and_yarn/typescript-eslint/parser-5.26.0  
+- Merge pull request #31 from cainthebest/dependabot/npm_and_yarn/typescript-eslint/eslint-plugin-5.26.0  
+- Merge pull request #32 from cainthebest/dependabot/npm_and_yarn/tsup-6.0.1  
+- Merge pull request #33 from cainthebest/dependabot/npm_and_yarn/typescript-4.7.2  
+- build(deps-dev): bump typescript from 4.6.4 to 4.7.2
+
+Bumps [typescript](https://github.com/Microsoft/TypeScript) from 4.6.4 to 4.7.2.
+- [Release notes](https://github.com/Microsoft/TypeScript/releases)
+- [Commits](https://github.com/Microsoft/TypeScript/compare/v4.6.4...v4.7.2)
+
+---
+updated-dependencies:
+- dependency-name: typescript
+  dependency-type: direct:development
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>    
+  
 ### **0.1.12** (2022-05-21)  
   
 - publish(npm): update  
