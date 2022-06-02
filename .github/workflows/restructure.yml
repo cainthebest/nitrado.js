@@ -1,0 +1,30 @@
+
+
+name: Restructure CI
+
+on:
+  push:
+    branches: [ restructure ]
+    
+jobs:
+    build_and_push:
+        name: build
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2.3.4
+            - uses: actions/setup-node@v2.1.3
+            - uses: bahmutov/npm-install@v1
+
+            - name: format
+              run: npm run build:format
+
+            - name: lint
+              run: npm run build:lint
+
+            - name: bundle
+              run: npm run build:bundle
+
+            - name: commit changes
+            - uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                  commit_message: chore(build)
