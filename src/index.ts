@@ -18,6 +18,7 @@ import axios from 'axios';
 import { URLs } from './interface/urls';
 import { Config } from './types/config';
 import { ParamsRecord } from './types/path';
+import { RequestError } from './interface/response';
 
 /**
  * NitrApi request manager
@@ -32,7 +33,7 @@ import { ParamsRecord } from './types/path';
  * @license GNU General Public License v3.0
  */
 
-export const NitrApi = (token?: string, config?: Config) => {
+const NitrApi = (token?: string, config?: Config) => {
     const request = axios.create({
         baseURL: 'https://api.nitrado.net',
         headers: {
@@ -64,13 +65,13 @@ export const NitrApi = (token?: string, config?: Config) => {
 
         // These are what makes the actual HTTP requests using axios
         const handlers = {
-            /* eslint-disable  @typescript-eslint/no-explicit-any */
+            /* eslint-disable */
             get: (data?: any) => request.get(urlString, { data }),
             post: (data?: any) => request.post(urlString, { data }),
             put: (data?: any) => request.put(urlString, { data }),
             delete: (data?: any) => request.delete(urlString, { data }),
             // options: (data?: any) => request.options(urlString, { data }),
-            /* eslint-enable  @typescript-eslint/no-explicit-any */
+            /* eslint-enable */
         } as URLs[URLString];
 
         return handlers;
@@ -80,3 +81,5 @@ export const NitrApi = (token?: string, config?: Config) => {
         path,
     };
 };
+
+export { NitrApi, Config, RequestError };

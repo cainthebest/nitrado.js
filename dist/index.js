@@ -27,15 +27,13 @@ __export(src_exports, {
 });
 module.exports = __toCommonJS(src_exports);
 var import_axios = __toESM(require("axios"));
-var import_fs = require("fs");
-var { version } = JSON.parse((0, import_fs.readFileSync)("package.json", "utf-8"));
-var NitrApi = /* @__PURE__ */ __name((token) => {
+var NitrApi = /* @__PURE__ */ __name((token, config) => {
   const request = import_axios.default.create({
     baseURL: "https://api.nitrado.net",
     headers: {
       ContentType: "application/json",
-      Authorization: token ? "Bearer " + token : "",
-      "User-Agent": `nitrado.js/${version}`
+      Authorization: token ? `Bearer ${token}` : "",
+      "User-Agent": config?.userAgent ? config.userAgent : "nitrado.js"
     }
   });
   const path = /* @__PURE__ */ __name((url, params) => {
@@ -59,6 +57,7 @@ var NitrApi = /* @__PURE__ */ __name((token) => {
 /**
  * NitrApi request manager
  * @param token The token to use for bearer auth requests
+ * @param config The config for NitrApi
  * @returns The NitrApi instance
  *
  * @github https://github.com/cainthebest/nitrado.js
@@ -67,3 +66,4 @@ var NitrApi = /* @__PURE__ */ __name((token) => {
  * @author Copyright (C) 2022 cainthebest & Contributors
  * @license GNU General Public License v3.0
  */
+//! Bug with error response types, just exported to user for now

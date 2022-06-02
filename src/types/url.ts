@@ -7,7 +7,7 @@ type Method = 'get' | 'post' | 'put' | 'delete' | 'options';
 
 // This helper type constructs a function signature for the response type of a method function
 // If the method has request data the signature will include that
-/* eslint-disable  @typescript-eslint/no-explicit-any */
+/* eslint-disable */
 export type RequestResponse<
     ResponseData extends Response,
     RequestData extends Record<string, any> | false = false,
@@ -21,4 +21,4 @@ export type URL<
         [Key in Method]?: RequestResponse<any, any>;
     },
 > = Methods;
-/* eslint-enable  @typescript-eslint/no-explicit-any */
+/* eslint-enable */

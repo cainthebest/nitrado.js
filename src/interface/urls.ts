@@ -1,5 +1,6 @@
 import { Global } from './api/global';
-import { Oauth2 } from './api/oauth2';
+import { OAuth2 } from './api/oauth2';
 import { Registration } from './api/registration';
+import { User } from './api/user';
 
-export type URLs = Global & Oauth2 & Registration;
+export type URLs = Global & OAuth2 & Registration & User;
