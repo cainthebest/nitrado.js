@@ -1,6 +1,8 @@
 import { URL, RequestResponse } from '../../../types/url';
 
-export interface Health_Check {
+// Global - Health Check for API
+// Docs: https://doc.nitrado.net/#api-Global-DoPing
+export interface HealthCheck {
     '/ping': URL<{
         get: RequestResponse<{
             status: '200';
