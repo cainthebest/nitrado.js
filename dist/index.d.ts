@@ -393,7 +393,7 @@ declare type URLs = Global & OAuth2 & Registration & User;
 
 declare type Config = {
     /**
-     * The request user agent.
+     * The request user agent
      */
     userAgent?: string;
 };
