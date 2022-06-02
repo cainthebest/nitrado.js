@@ -1,7 +1,7 @@
 name: Continuous Compilation, Integration & Deployment
 on:
     push:
-        branches: [master, restructure]
+        branches: [master]
     pull_request:
         branches: [master]
 
