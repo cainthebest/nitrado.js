@@ -1,3 +1,4 @@
+// The interface for the response from the API
 export interface Response {
     status: string;
     body?: unknown;
@@ -5,7 +6,7 @@ export interface Response {
 }
 
 //! Bug with error response types
-/* 
+/*
 type ClientErrorStatus =
     | '400' // Bad Request
     | '401' // Unauthorized
@@ -15,21 +16,16 @@ type ClientErrorStatus =
     | '409' // Conflict
     | '412' // Precondition Failed
     | '429'; // Too Many Requests
-export interface ClientRequestError extends Response {
-    status: ClientErrorStatus;
-    body: {
-        status: 'error';
-        message: string;
-        data?: unknown;
-    };
-}
+
 type ServerErrorStatus =
     | '500' // Internal Server Error
     | '502' // Bad Gateway
     | '503' // Service Unavailable
     | '504'; // Gateway Timeout
-export interface ServerRequestError extends Response {
-    status: ServerErrorStatus;
+
+// The interface for the error response from the API
+export interface RequestError extends Response {
+    status: ClientErrorStatus | ServerErrorStatus;
     body: {
         status: 'error';
         message: string;
