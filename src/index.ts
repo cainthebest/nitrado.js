@@ -15,7 +15,7 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 import axios from 'axios';
-import { URLs } from './interface/urls';
+import { URLs } from './types/urls';
 import { Config } from './types/config';
 import { ParamsRecord } from './types/path';
 import { RequestError } from './interface/response';
