@@ -3,15 +3,14 @@ remote_theme: pmarsceill/just-the-docs
 color_scheme: "dark"
 
 # Logo image
-logo: "/assets/img/package-logo.png"
+logo: '/assets/img/package-logo.png'
 
 # Aux link in top right of page
 aux_links:
-  "Nitrado.js on GitHub":
-    - "https://github.com/cainthebest/nitrado.js"
+    'Nitrado.js on GitHub':
+        - 'https://github.com/cainthebest/nitrado.js'
 # Aux link will open a new tab
 aux_links_new_tab: true
 
 # footer
-footer_content: "Copyright &copy; 2022 <a href=\"https://github.com/cainthebest\">cainthebest</a> and <a href=\"https://github.com/cainthebest/nitrado.js/contributors\">contributors</a>. Distributed under <a href=\"https://github.com/cainthebest/nitrado.js/blob/master/LICENSE.txt\">GPL 3.0 license.</a>"
-
+footer_content: 'Copyright &copy; 2022 <a href="https://github.com/cainthebest">cainthebest</a> and <a href="https://github.com/cainthebest/nitrado.js/contributors">contributors</a>. Distributed under <a href="https://github.com/cainthebest/nitrado.js/blob/master/LICENSE.txt">GPL 3.0 license.</a>'
