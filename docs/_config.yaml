@@ -13,4 +13,4 @@ aux_links:
 aux_links_new_tab: true
 
 # footer
-footer_content: 'Copyright &copy; 2022 <a href="https://github.com/cainthebest">cainthebest</a> and <a href="https://github.com/cainthebest/nitrado.js/contributors">contributors</a>. Distributed under <a href="https://github.com/cainthebest/nitrado.js/blob/master/LICENSE.txt">GPL 3.0 license.</a>'
+footer_content: 'Copyright &copy; 2022 <a href="https://github.com/cainthebest">cainthebest</a> and <a href="https://github.com/cainthebest/nitrado.js/contributors">contributors</a>.\nDistributed under <a href="https://github.com/cainthebest/nitrado.js/blob/master/LICENSE.txt">GPL 3.0 license.</a>'
