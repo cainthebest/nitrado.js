@@ -1,6 +1,6 @@
 # Theme
 remote_theme: pmarsceill/just-the-docs
-color_scheme: 'nitrado'
+color_scheme: 'nitrado_js'
 
 # Logo image
 logo: '/assets/img/package-logo.png'
