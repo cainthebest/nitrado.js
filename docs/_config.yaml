@@ -2,6 +2,9 @@
 remote_theme: pmarsceill/just-the-docs
 color_scheme: 'nitrado'
 
+# Logo image
+logo: '/assets/img/package-logo.png'
+
 # Aux link in top right of page
 aux_links:
     'Nitrado.js on GitHub':
