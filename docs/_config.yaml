@@ -12,5 +12,3 @@ aux_links:
 # Aux link will open a new tab
 aux_links_new_tab: true
 
-# footer
-footer_content: 'Copyright &copy; 2022 <a href="https://github.com/cainthebest">cainthebest</a>. Distributed under <a href="https://github.com/cainthebest/nitrado.js/blob/master/LICENSE.txt">GPL 3.0 license.</a>'
