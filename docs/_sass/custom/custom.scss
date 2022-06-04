@@ -192,6 +192,7 @@ body {
     padding-top: $sp-4;
     padding-bottom: $sp-4;
     color: $white;
+    visibility: hidden;
     @include fs-2;
 
     @include mq(md) {
