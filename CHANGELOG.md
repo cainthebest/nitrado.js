@@ -1,3 +1,46 @@
+### **0.1.14** (2022-06-06)  
+  
+- publish(npm): push dep updates  
+- Merge pull request #40 from cainthebest/dependabot/npm_and_yarn/tsup-6.1.0  
+- Merge pull request #41 from cainthebest/dependabot/npm_and_yarn/typescript-4.7.3  
+- Merge pull request #42 from cainthebest/dependabot/npm_and_yarn/eslint-8.17.0  
+- Merge pull request #43 from cainthebest/dependabot/npm_and_yarn/types/node-17.0.40  
+- build(deps-dev): bump @types/node from 17.0.38 to 17.0.40
+
+Bumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 17.0.38 to 17.0.40.
+- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)
+- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)
+
+---
+updated-dependencies:
+- dependency-name: "@types/node"
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>  
+- build(deps-dev): bump typescript from 4.7.2 to 4.7.3
+
+Bumps [typescript](https://github.com/Microsoft/TypeScript) from 4.7.2 to 4.7.3.
+- [Release notes](https://github.com/Microsoft/TypeScript/releases)
+- [Commits](https://github.com/Microsoft/TypeScript/compare/v4.7.2...v4.7.3)
+
+---
+updated-dependencies:
+- dependency-name: typescript
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>  
+- fix(ci): fix the dupe ci bug  
+- fix(ci): try again  
+- chore(build)  
+- fix(ci)  
+- del(ci): broken for now  
+- fix(ci): make simpler  
+- impl(ci): add ci for branch    
+  
 ### **0.1.13** (2022-06-02)  
   
 - publish(npm): fix and dep updates  
