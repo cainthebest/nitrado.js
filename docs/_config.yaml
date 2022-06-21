@@ -11,3 +11,6 @@ aux_links:
         - 'https://github.com/cainthebest/nitrado.js'
 # Aux link will open a new tab
 aux_links_new_tab: true
+
+# Base url
+url: "https://docs.nitradojs.xyz/"
