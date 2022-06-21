@@ -13,7 +13,7 @@ aux_links:
 aux_links_new_tab: true
 
 # Base url
-url: 'https://docs.nitradojs.xyz/'
+url: 'https://docs.nitradojs.xyz'
 
 # Enable or disable the site search
 # Supports true (default) or false
