@@ -1,4 +1,4 @@
-import { URL, RequestResponse } from '../../../types/url';
+import { URL, RequestResponse } from '../../types/url';
 
 export interface Maintenance {
     // Catogory: Global
@@ -8,18 +8,6 @@ export interface Maintenance {
     // URL: https://api.nitrado.net/maintenance
     // Method: GET
     // Status: 200
-    // Example Response:
-    // {
-    //    status: 'success',
-    //    data: {
-    //        maintenance: {
-    //            cloud_backend: false,
-    //            domain_backend: false,
-    //            dns_backend: false,
-    //            pmacct_backend: false,
-    //        },
-    //    },
-    // }
     '/maintenance': URL<{
         get: RequestResponse<{
             status: '200';

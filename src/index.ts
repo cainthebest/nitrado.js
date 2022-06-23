@@ -15,7 +15,7 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 import axios from 'axios';
-import { URLs } from './types/urls';
+import { URLs } from './routes';
 import { Config } from './types/config';
 import { ParamsRecord } from './types/path';
 import { RequestError } from './interface/response';
@@ -83,3 +83,5 @@ const NitrApi = (token?: string, config?: Config) => {
 };
 
 export { NitrApi, Config, RequestError };
+
+
