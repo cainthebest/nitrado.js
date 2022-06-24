@@ -1,3 +1,11 @@
+### **0.1.16** (2022-06-24)  
+  
+- Merge pull request #61 from nitradojs/import-resolution-fix
+
+Import resolution fix  
+- npm(update): push patch with fix  
+- fix(imports): change to root imports    
+  
 ### **0.1.15** (2022-06-21)  
   
 - npm(update): deps  
