@@ -2,12 +2,12 @@
     "name": "nitrado.js",
     "version": "0.1.15",
     "license": "GPL-3.0",
-    "main": "dist/index.js",
-    "module": "dist/index.mjs",
+    "main": "index.js",
+    "module": "index.mjs",
     "exports": {
         ".": {
-            "require": "./dist/index.js",
-            "import": "./dist/index.mjs"
+            "require": "./index.js",
+            "import": "./index.mjs"
         }
     },
     "author": "cainthebest <https://github.com/cainthebest> & Contributors",
