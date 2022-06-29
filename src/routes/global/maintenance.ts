@@ -4,7 +4,6 @@ export interface Maintenance {
     // Catogory: Global
     // Name: Maintenance status
     // Official Documentation: https://doc.nitrado.net/#api-Global-GetMaintenance
-    // Nitrado.js Documentation: Coming soon
     // URL: https://api.nitrado.net/maintenance
     // Method: GET
     // Status: 200
