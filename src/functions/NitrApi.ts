@@ -159,19 +159,3 @@ export const NitrApi = (token?: string, config?: Config) => {
         path,
     };
 };
-
-const api = NitrApi('', {
-    debug: true,
-    cache: true,
-    cacheOptions: { ttl: 60 },
-});
-api.path('/ping', {})
-    .get()
-    .then((response) => {
-        log(response.cached ? 'Cached' : 'Not cached');
-        api.path('/ping', {})
-            .get()
-            .then((response) => log(response.cached ? 'Cached' : 'Not cached'))
-            .catch(() => log('error catch'));
-    })
-    .catch(() => log('error catch'));
