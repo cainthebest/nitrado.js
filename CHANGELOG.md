@@ -1,3 +1,29 @@
+### **0.1.17** (2022-07-10)  
+  
+- npm(update): deps  
+- chore(gitignore): add dist  
+- del(dist): remove from repo, built in workflow  
+- chore(build)  
+- fix(package-lock): gen new one  
+- build(deps-dev): bump @types/node from 18.0.0 to 18.0.3 (#71)
+
+Bumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from 18.0.0 to 18.0.3.
+- [Release notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases)
+- [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)
+
+---
+updated-dependencies:
+- dependency-name: "@types/node"
+  dependency-type: direct:development
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>  
+- Merge pull request #62 from nitradojs/dependabot/npm_and_yarn/typescript-eslint/parser-5.30.0  
+- Merge pull request #63 from nitradojs/dependabot/npm_and_yarn/typescript-eslint/eslint-plugin-5.30.0    
+  
 ### **0.1.16** (2022-06-24)  
   
 - Merge pull request #61 from nitradojs/import-resolution-fix

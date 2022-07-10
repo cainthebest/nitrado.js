@@ -1,6 +1,6 @@
 {
     "name": "nitrado.js",
-    "version": "0.1.16",
+    "version": "0.1.17",
     "license": "GPL-3.0",
     "main": "index.js",
     "module": "index.mjs",
