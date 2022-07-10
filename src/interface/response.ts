@@ -4,5 +4,3 @@ export interface Response {
     body?: unknown;
     headers?: Record<string, unknown>;
 }
-
-

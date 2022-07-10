@@ -14,7 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-// Export the NitrApi function
+// Export functions
 export { NitrApi } from './functions/NitrApi';
 
 // Export types
@@ -23,4 +23,4 @@ export type {
     GameserverStatusCodes,
     GameserverType,
     GameserverMemoryType,
-} from './types/body_types';
+} from './types/body';

@@ -1,10 +1,10 @@
 import { URL, RequestResponse } from '../../../../types/url';
 
-export interface Delete {
-    // Catogory: Gameserver
-    // Name: Gameserver details
-    // Official Documentation: https://doc.nitrado.net/#api-Global-GetMaintenance
-    // URL: https://api.nitrado.net/maintenance
+export interface Stats {
+    // Catogory: Gameserver/Files
+    // Name: Get file stats
+    // Official Documentation: https://doc.nitrado.net/#api-Gameserver-GameserverFilesStat
+    // URL: https://api.nitrado.net/services/{id}/gameservers/file_server/stat
     // Method: GET
     // Status: 200
     '/services/{id}/gameservers/file_server/stat': URL<{

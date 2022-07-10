@@ -1,6 +1,6 @@
 import { URL, RequestResponse } from '../../../../types/url';
 
-export interface ChangePassword {
+export interface ChangeFTPPassword {
     // Catogory: Gameserver/FTP
     // Name: Change FTP password
     // Official Documentation: https://doc.nitrado.net/#api-Gameserver-FTPPassword

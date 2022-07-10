@@ -3,7 +3,7 @@ import {
     GameserverStatusCodes,
     GameserverType,
     GameserverMemoryType,
-} from '../../../types/body_types';
+} from '../../../types/body';
 
 export interface Details {
     // Catogory: Gameserver

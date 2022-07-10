@@ -1,11 +1,11 @@
 import { URL, RequestResponse } from '../../../../types/url';
 
-export interface RestoreDatabase {
-    // Catogory: Gameserver
-    // Name: Gameserver details
-    // Official Documentation: https://doc.nitrado.net/#api-Global-GetMaintenance
-    // URL: https://api.nitrado.net/maintenance
-    // Method: GET
+export interface ListPackages {
+    // Catogory: Gameserver/Package
+    // Name: List packages
+    // Official Documentation: https://doc.nitrado.net/#api-Gameserver-GetServicesIdGameserversPackages
+    // URL: https://api.nitrado.net/services/{id}/gameservers/packages
+    // Method: POST
     // Status: 200
     '/services/{id}/gameservers/packages': URL<{
         post: RequestResponse<{
