@@ -10,7 +10,7 @@ export interface Version {
     '/version': URL<{
         get: RequestResponse<{
             status: '200';
-            body: { 
+            body: {
                 status: 'success';
                 message: string;
             };
