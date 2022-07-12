@@ -4,6 +4,7 @@ export const tsup: Options = {
     splitting: false,
     sourcemap: false,
     clean: true,
+    bundle: true,
     dts: true,
     keepNames: true,
     target: 'esnext',

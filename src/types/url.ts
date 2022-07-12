@@ -1,19 +1,21 @@
-import { Response } from '../interface/response';
-
-import type { AxiosResponse } from 'axios';
+import type { Response } from '../interface/response';
+import type { CacheAxiosResponse } from 'axios-cache-interceptor';
 
 // All the possible HTTP Methods
 type Method = 'get' | 'post' | 'put' | 'delete' | 'options';
 
 // This helper type constructs a function signature for the response type of a method function
 // If the method has request data the signature will include that
-/* eslint-disable  @typescript-eslint/no-explicit-any */
+/* eslint-disable */
 export type RequestResponse<
     ResponseData extends Response,
     RequestData extends Record<string, any> | false = false,
 > = RequestData extends false
-    ? (data?: any) => Promise<AxiosResponse<ResponseData>>
-    : (data: RequestData) => Promise<AxiosResponse<ResponseData>>;
+    ? (data?: undefined) => Promise<CacheAxiosResponse<ResponseData>>
+    : (data: RequestData) => Promise<CacheAxiosResponse<ResponseData>>;
+
+// This helper type is used to define the type of the request data for the handlers
+export type RequestData = { [x: string]: any };
 
 // This constructs a object that has Method properties that are functions that return a RequestResponse
 export type URL<
@@ -21,4 +23,4 @@ export type URL<
         [Key in Method]?: RequestResponse<any, any>;
     },
 > = Methods;
-/* eslint-enable  @typescript-eslint/no-explicit-any */
+/* eslint-enable */
