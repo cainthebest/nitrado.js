@@ -9,11 +9,8 @@ export interface RestoreSet {
     // Status: 200
     '/services/{id}/gameservers/settings/sets/{set_id}/restore': URL<{
         post: RequestResponse<{
-            status: '200';
-            body: {
-                status: 'success';
-                message: string;
-            };
+            status: 'success';
+            message: string;
         }>;
     }>;
 }

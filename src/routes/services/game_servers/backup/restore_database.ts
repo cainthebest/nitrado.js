@@ -10,11 +10,8 @@ export interface RestoreDatabase {
     '/services/{id}/gameservers/backups/database': URL<{
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    data: string;
-                };
+                status: 'success';
+                data: string;
             },
             { database: string; timestamp: string }
         >;

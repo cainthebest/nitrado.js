@@ -10,11 +10,8 @@ export interface Ping {
     '/services/{id}/gameservers/app_server': URL<{
         get: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             { command: string }
         >;

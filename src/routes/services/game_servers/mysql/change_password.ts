@@ -10,11 +10,8 @@ export interface ChangeDBPassword {
     '/services/{id}/gameservers/mysql/password': URL<{
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             { password: string }
         >;

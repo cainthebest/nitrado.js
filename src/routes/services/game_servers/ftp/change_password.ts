@@ -10,11 +10,8 @@ export interface ChangeFTPPassword {
     '/services/{id}/gameservers/ftp/password': URL<{
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             { password: string }
         >;

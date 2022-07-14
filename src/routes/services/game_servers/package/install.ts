@@ -9,10 +9,7 @@ export interface InstallPackage {
     // Status: 200
     '/services/{id}/gameservers/packages/install': URL<{
         post: RequestResponse<
-            {
-                status: '200';
-                body: unknown;
-            },
+            { data: unknown },
             { package: string; version?: string }
         >;
     }>;
