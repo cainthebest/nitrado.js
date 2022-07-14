@@ -9,12 +9,9 @@ export interface Bookmarks {
     // Status: 200
     '/services/{id}/gameservers/file_server/bookmarks': URL<{
         get: RequestResponse<{
-            status: '200';
-            body: {
-                status: 'success';
-                data: {
-                    bookmarks: Array<string>;
-                };
+            status: 'success';
+            data: {
+                bookmarks: Array<string>;
             };
         }>;
     }>;

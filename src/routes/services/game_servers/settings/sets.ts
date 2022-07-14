@@ -11,11 +11,8 @@ export interface Sets {
         // Status: 200
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             { name?: string }
         >;
@@ -25,11 +22,8 @@ export interface Sets {
         // Method: DELETE
         // Status: 200
         delete: RequestResponse<{
-            status: '200';
-            body: {
-                status: 'success';
-                message: string;
-            };
+            status: 'success';
+            message: string;
         }>;
 
         // Name: List all sets
@@ -37,19 +31,16 @@ export interface Sets {
         // Method: GET
         // Status: 200
         get: RequestResponse<{
-            status: '200';
-            body: {
-                status: 'success';
-                data: {
-                    sets: Array<{
-                        id: number;
-                        name: string;
-                        game: string;
-                        data: Record<string, unknown>;
-                        datetime: string;
-                        backup_id: null | unknown;
-                    }>;
-                };
+            status: 'success';
+            data: {
+                sets: Array<{
+                    id: number;
+                    name: string;
+                    game: string;
+                    data: Record<string, unknown>;
+                    datetime: string;
+                    backup_id: null | unknown;
+                }>;
             };
         }>;
     }>;

@@ -10,14 +10,11 @@ export interface Seek {
     '/services/{id}/gameservers/file_server/seek': URL<{
         get: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    data: {
-                        token: {
-                            url: string;
-                            token: string;
-                        };
+                status: 'success';
+                data: {
+                    token: {
+                        url: string;
+                        token: string;
                     };
                 };
             },

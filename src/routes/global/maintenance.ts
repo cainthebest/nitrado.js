@@ -9,16 +9,13 @@ export interface Maintenance {
     // Status: 200
     '/maintenance': URL<{
         get: RequestResponse<{
-            status: '200';
-            body: {
-                status: 'success';
-                data: {
-                    maintenance: {
-                        cloud_backend: boolean;
-                        domain_backend: boolean;
-                        dns_backend: boolean;
-                        pmacct_backend: boolean;
-                    };
+            status: 'success';
+            data: {
+                maintenance: {
+                    cloud_backend: boolean;
+                    domain_backend: boolean;
+                    dns_backend: boolean;
+                    pmacct_backend: boolean;
                 };
             };
         }>;

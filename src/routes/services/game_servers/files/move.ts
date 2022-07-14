@@ -10,11 +10,8 @@ export interface Move {
     '/services/{id}/gameservers/file_server/move': URL<{
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             {
                 source_path: string;

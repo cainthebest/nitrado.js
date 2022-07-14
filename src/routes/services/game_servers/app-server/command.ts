@@ -10,11 +10,8 @@ export interface Command {
     '/services/{id}/gameservers/app_server/command': URL<{
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             { command: string }
         >;

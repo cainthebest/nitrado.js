@@ -9,8 +9,7 @@ export interface HealthCheck {
     // Status: 200
     '/ping': URL<{
         get: RequestResponse<{
-            status: '200';
-            body: {
+            data: {
                 status: 'success';
                 message: string;
             };
