@@ -23,12 +23,9 @@ export interface Settings {
         // Status: 200
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    data: {
-                        settings: Record<string, unknown>;
-                    };
+                status: 'success';
+                data: {
+                    settings: Record<string, unknown>;
                 };
             },
             { category: string; key: string; value: string }

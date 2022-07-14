@@ -10,12 +10,9 @@ export interface Size {
     '/services/{id}/gameservers/file_server/size': URL<{
         get: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    data: {
-                        size: number;
-                    };
+                status: 'success';
+                data: {
+                    size: number;
                 };
             },
             { path: string }

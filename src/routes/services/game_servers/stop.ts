@@ -10,11 +10,8 @@ export interface Stop {
     '/services/{id}/gameservers/stop': URL<{
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             { message?: string; stop_message?: string }
         >;

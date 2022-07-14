@@ -10,11 +10,8 @@ export interface CreateDir {
     '/services/{id}/gameservers/file_server/mkdir': URL<{
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             { path: string; name: string }
         >;

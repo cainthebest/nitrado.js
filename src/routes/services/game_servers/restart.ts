@@ -10,11 +10,8 @@ export interface Restart {
     '/services/{id}/gameservers/restart': URL<{
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             { message?: string; restart_message?: string }
         >;

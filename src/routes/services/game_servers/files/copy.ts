@@ -10,11 +10,8 @@ export interface Copy {
     '/services/{id}/gameservers/file_server/copy': URL<{
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             { source_path: string; target_path: string; target_name: string }
         >;

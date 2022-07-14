@@ -10,11 +10,8 @@ export interface Delete {
     '/services/{id}/gameservers/file_server/delete': URL<{
         delete: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             { path: string }
         >;

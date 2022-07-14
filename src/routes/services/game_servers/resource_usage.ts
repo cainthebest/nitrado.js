@@ -10,16 +10,13 @@ export interface ResourceUsage {
     '/services/{id}/gameservers/stats': URL<{
         get: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    data: {
-                        stats: {
-                            currentPlayers: Array<Array<number>>;
-                            maxPlayers: Array<Array<number>>;
-                            cpuUsage: Array<Array<number>>;
-                            memoryUsage: Array<Array<number>>;
-                        };
+                status: 'success';
+                data: {
+                    stats: {
+                        currentPlayers: Array<Array<number>>;
+                        maxPlayers: Array<Array<number>>;
+                        cpuUsage: Array<Array<number>>;
+                        memoryUsage: Array<Array<number>>;
                     };
                 };
             },

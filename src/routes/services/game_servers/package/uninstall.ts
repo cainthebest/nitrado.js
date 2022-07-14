@@ -10,7 +10,6 @@ export interface PackageUninstall {
     '/services/{id}/gameservers/packages/uninstall': URL<{
         delete: RequestResponse<
             {
-                status: '200';
                 body: unknown;
             },
             { package: string }

@@ -10,7 +10,6 @@ export interface PackageReinstall {
     '/services/{id}/gameservers/packages/reinstall': URL<{
         put: RequestResponse<
             {
-                status: '200';
                 body: unknown;
             },
             { package: string; version?: string }

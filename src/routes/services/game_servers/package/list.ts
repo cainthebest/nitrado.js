@@ -9,26 +9,23 @@ export interface ListPackages {
     // Status: 200
     '/services/{id}/gameservers/packages': URL<{
         post: RequestResponse<{
-            status: '200';
-            body: {
-                packages: {
-                    sourcemod: {
-                        description: string;
-                        status: string;
-                        version: string;
-                        patch_id: string;
-                        patches: Array<
-                            Record<
-                                string,
-                                {
-                                    version: string;
-                                    supported_packages: null | Array<unknown>;
-                                    retired: boolean;
-                                }
-                            >
-                        >;
-                        dependencies: Array<unknown>;
-                    };
+            packages: {
+                sourcemod: {
+                    description: string;
+                    status: string;
+                    version: string;
+                    patch_id: string;
+                    patches: Array<
+                        Record<
+                            string,
+                            {
+                                version: string;
+                                supported_packages: null | Array<unknown>;
+                                retired: boolean;
+                            }
+                        >
+                    >;
+                    dependencies: Array<unknown>;
                 };
             };
         }>;

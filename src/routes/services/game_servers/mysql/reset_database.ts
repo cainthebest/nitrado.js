@@ -10,11 +10,8 @@ export interface ResetDatabase {
     '/services/{id}/gameservers/mysql/reset': URL<{
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             { password: string }
         >;
