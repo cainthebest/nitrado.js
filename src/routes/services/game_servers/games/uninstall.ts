@@ -9,11 +9,8 @@ export interface Uninstall {
     // Status: 200
     '/services/{id}/gameservers/games/uninstall': URL<{
         delete: RequestResponse<{
-            status: '200';
-            body: {
-                status: 'success';
-                message: string;
-            };
+            status: 'success';
+            message: string;
         }>;
     }>;
 }

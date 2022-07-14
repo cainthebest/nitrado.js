@@ -10,11 +10,8 @@ export interface InstallGame {
     '/services/{id}/gameservers/games/install': URL<{
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    message: string;
-                };
+                status: 'success';
+                message: string;
             },
             { game: string; modpack?: string }
         >;

@@ -10,14 +10,11 @@ export interface Download {
     '/services/{id}/gameservers/file_server/download': URL<{
         get: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    data: {
-                        token: {
-                            url: string;
-                            token: string;
-                        };
+                status: 'success';
+                data: {
+                    token: {
+                        url: string;
+                        token: string;
                     };
                 };
             },

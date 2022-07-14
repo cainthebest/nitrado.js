@@ -9,11 +9,8 @@ export interface Start {
     // Status: 200
     '/services/{id}/gameservers/games/start': URL<{
         post: RequestResponse<{
-            status: '200';
-            body: {
-                status: 'success';
-                message: string;
-            };
+            status: 'success';
+            message: string;
         }>;
     }>;
 }

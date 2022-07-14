@@ -10,11 +10,8 @@ export interface RestoreGameserver {
     '/services/{id}/gameservers/backups/gameserver': URL<{
         post: RequestResponse<
             {
-                status: '200';
-                body: {
-                    status: 'success';
-                    data: string;
-                };
+                status: 'success';
+                data: string;
             },
             { folder: string; backup: string }
         >;

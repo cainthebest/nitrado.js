@@ -8,7 +8,7 @@ type Method = 'get' | 'post' | 'put' | 'delete' | 'options';
 // If the method has request data the signature will include that
 /* eslint-disable */
 export type RequestResponse<
-    ResponseData extends Response,
+    ResponseData = Response,
     RequestData extends Record<string, any> | false = false,
 > = RequestData extends false
     ? (data?: undefined) => Promise<CacheAxiosResponse<ResponseData>>
