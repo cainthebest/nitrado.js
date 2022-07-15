@@ -1,3 +1,199 @@
+## **0.2.0** (2022-07-14)  
+  
+- npm(new semver minor): has breaking changes!  
+- fix(issue #72): fix for issue still needs testing
+
+Co-authored-by: WildCarlUK <WildCarl@users.noreply.github.com>  
+- Restructure API types for maintainability  (#37)
+
+* del(api files): make a clean dir
+
+* del(eslint config): move to `package.json`
+
+* del(prettier config): move to `package.json`
+
+* chore(scripts & config): update scripts and move config
+
+* chore(deps): add dev dep npm run all
+
+* chore(ts target): change to esnext
+
+* chore(workflow): change ci to use new script
+
+* impl(global): health check endpoint
+
+* impl(global): add maintenance endpoint
+
+* impl(global): add version endpoint
+
+* impl(global): export global
+
+* fix(urls): change structure of types
+
+* impl(config): add a basic config param
+
+* doc(maintrnance): add comments
+
+* doc(version): add comments
+
+* doc(health_check): add comments
+
+* chore(rename import): change interface name style
+
+* fix(shorten): error response (still broken)
+
+* impl(long life tokens): add endpoints
+
+* impl(sub token): add endpoint
+
+* impl(oauth2): export type
+
+* impl(oauth2): export type
+
+* impl(registration): add endpoints
+
+* revert(ci): just doesnt want to work
+
+* Merge(local): local -> restructure
+
+* test(ci): test with change
+
+* merge(master ci): copy master ci
+
+* chore(build)
+
+* del(dist)
+
+* chore(ignore): add dist
+
+* fix(types): move types to types
+
+* doc(init): make basic
+
+* chore(build)
+
+* quickfix(docs)
+
+* chore(build)
+
+* doc(fix)
+
+* dox(fix)
+
+* docs(style)
+
+* test(doc): just playing around with styles
+
+* chore(build)
+
+* test(docs)
+
+* docs(update)
+
+* doc(style): too light
+
+* docs(style): make darker
+
+* docs(style): make darker
+
+* doc(fix style)
+
+* docs(update)
+
+* doc(update)
+
+* chore(build)
+
+* docs(update)
+
+* doc(update)
+
+* update(docs)
+
+* docs(update)
+
+* doc(fix)
+
+* docs(update)
+
+* docs(update)
+
+* docs(update)
+
+* chore(build)
+
+* docs(update)
+
+* docs(update)
+
+* docs(update)
+
+* docs(update)
+
+* docs(update)
+
+* impl(endpoint): service - AutoExtend
+
+* impl(endpoint): service - Cancel
+
+* impl(endpoint): service - KnowledgeBase
+
+* impl(endpoint): service - Logs
+
+* impl(endpoint): service - Notifications
+
+* impl(endpoint): service - SalePrice
+
+* impl(endpoint): service - SubDomain
+
+* impl(endpoint): service - Services
+
+* impl(endpoint): service
+
+* chore(build)
+
+* docs(update)
+
+* chore(build)
+
+* docs(test): codeblocks
+
+* Create CNAME
+
+* Update CNAME
+
+* Update _config.yaml
+
+* chore(build)
+
+* Update _config.yaml
+
+* chore(build)
+
+* Update _config.yaml
+
+* Delete CNAME
+
+* del(docs): moved to its own repo
+
+* Test alternative format (#59)
+
+* init
+
+* merge(local)
+
+* merge(local)
+
+* fix(test): remove test
+
+* Merge(local)
+
+* doc(fix): add comments to endpoints
+
+* chore(build)
+
+Co-authored-by: cainthebest <cainthebest@users.noreply.github.com>    
+  
 ### **0.1.17** (2022-07-10)  
   
 - npm(update): deps  
